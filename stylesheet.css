@@ -1,0 +1,149 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --DarkGrey: hsl(217, 10%, 25%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+}
+
+div.card-one {
+  max-width: 300px;
+  background-color: var(--DarkBlue);
+  border-radius: 0.5rem;
+  padding: 15px;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.star-icon {
+  background-color: var(--DarkGrey);
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: left;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+h1.question {
+  color: var(--white);
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--LightGrey);
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  padding: 18px;
+  background-color: var(--DarkGrey);
+  color: var(--LightGrey);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Orange);
+  color: var(--white);
+}
+
+.submit-button:hover {
+  background-color: var(--white);
+  color: var(--Orange);
+}
+
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  color: var(--white);
+  display: flex;
+  border-radius: 1.5rem;
+  font-size: 15px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 255px;
+}
+
+div.card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  background-color: var(--DarkBlue);
+  border-radius: 0.5rem;
+  padding: 15px;
+}
+
+img.rated-image {
+  margin: 20px;
+}
+p.rated-selection {
+  margin: 20px;
+  padding: 8px 10px;
+  border-radius: 1.5rem;
+  background-color: var(--DarkGrey);
+  color: var(--Orange);
+}
+
+h2.rated-thanks {
+  color: var(--white);
+  font-size: 1.8em;
+  margin-top: 15px;
+}
+
+p.rated-paragraph {
+  margin: 20px;
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.selected {
+  background-color: var(--LightGrey);
+  color: var(--white);
+}

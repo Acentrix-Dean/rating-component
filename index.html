@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <title>Interactive Rating Component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-one" id="cardOne">
+        <img
+          class="star-icon"
+          id="starIcon"
+          src="/images/icon-star.svg"
+          alt="An icon of a star"
+        />
+        <h1 class="question" id="question">How did we do?</h1>
+        <p class="paragraph" id="paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="wrapper">
+          <button id="ratingButtonOne">1</button>
+          <button id="ratingButtonTwo">2</button>
+          <button id="ratingButtonThree">3</button>
+          <button id="ratingButtonFour">4</button>
+          <button id="ratingButtonFive">5</button>
+        </div>
+        <button class="submit-button" id="submitButton">SUBMIT</button>
+      </div>
+      <div class="d-none" id="cardTwo">
+        <img
+          class="rated-image"
+          id="thankYouImage"
+          src="/images/illustration-thank-you.svg"
+        />
+        <p class="rated-selection" id="ratedSelection">You selected out of 5</p>
+        <h2 class="rated-thanks" id="ratedThanks">Thank you!</h2>
+        <p class="rated-paragraph" id="ratedParagraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+        <button class="submit-button" id="rateAgainButton">RATE AGAIN</button>
+      </div>
+    </main>
+    <footer>
+      <script src="javascript.js"></script>
+    </footer>
+  </body>
+</html>
